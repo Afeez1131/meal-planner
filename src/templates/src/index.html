@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramadan Meal Planner - Grid View</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+              rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+              rel="stylesheet">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+              
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <style>
+            
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="ramadan-icon">🌙</div>
+            <h1 class="hero-title">Ramadan Meal Planner</h1>
+            <p class="hero-subtitle">
+                We understand how challenging 😓 it is deciding what to cook for Suhoor 🌙 and Iftar 🍽️ every day. Let us help you plan your meals 📋, so you can focus more on worship 🙏.
+            </p>
+        </div>
+        <div class="container-fluid">
+            <!-- Export Buttons -->
+            <!-- Place this right after the hero section -->
+            <div class="export-tip no-print d-none transition-all" id="export-tip">
+                <div class="export-buttons">
+                    <button class="btn btn-outline" onclick="exportToCSV()" title="Export to CSV">
+                        <i class="fas fa-file-csv"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="exportToPDF()" title="Export to PDF">
+                        <i class="fas fa-file-pdf"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="printMealPlan()" title="Print View">
+                        <i class="fas fa-print"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="saveMealPlanToBackend()" title="Share Meal Plan">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    <button class="btn btn-outline text-danger"
+                            onclick="resetMealPlan()"
+                            title="Reset Meal Plan">
+                        <i class="fas fa-undo"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Search and Progress -->
+            <div class="search-container no-print">
+                <input type="text" id="searchMeals" placeholder="Search meals...">
+            </div>
+            <div class="progress-container no-print">
+                <div class="progress-wrapper">
+                    <div class="progress">
+                        <div class="progress-bar" 
+                             role="progressbar" 
+                             aria-valuenow="0" 
+                             aria-valuemin="0" 
+                             aria-valuemax="100">
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-details d-flex justify-content-between align-items-center mt-2">
+                    <span id="completionStatus" class="text-muted small">0/30 days planned</span>
+                    <span id="progressPercentage" class="text-muted small">0%</span>
+                </div>
+            </div>
+            <div class="meal-grid">
+                <!-- Days will be generated here -->
+            </div>
+            <!-- Loading Overlay -->
+            <div class="loading-overlay">
+                <div class="loading-spinner"></div>
+            </div>
+            <!-- Toast Container for Notifications -->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050">
+                <div id="toastContainer"></div>
+            </div>
+        </div>
+        {% comment %} // Add this HTML for the duplication modal {% endcomment %}
+        <div class="modal fade" id="copyMealModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Copy Meal to Other Days</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="copy-options mb-3">
+                            <button class="btn btn-sm btn-outline-primary" onclick="selectAll()">Select All</button>
+                        </div>
+                        <div class="day-selection">
+                            <div class="day-grid">
+                                <!-- Days will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="copyToSelectedDays()">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer no-print">
+            <div class="container-fluid float-left">
+                <p class="mb-0 text-muted small">
+                    Developed with <i class="fas fa-heart text-danger"></i> by 
+                    <a href="https://www.linkedin.com/in/lawal-afeez/" target="_blank" class="text-decoration-none text-dark fw-bold">AbdulAfeez Lawal</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script>
+           
+        </script>
+    </body>
+</html>

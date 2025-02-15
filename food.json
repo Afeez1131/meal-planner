@@ -1,0 +1,659 @@
+{
+  "food_categories": [
+    {
+      "name": "Jollof Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Fried Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Coconut Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Ofada Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Tuwo Shinkafa",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Native Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Rice and Beans",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "White Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Concoction Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Rice Porridge",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Chinese Fried Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Basmati Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Palm Oil Rice",
+      "type": "base",
+      "group": "rice"
+    },
+    {
+      "name": "Amala",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Eba",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Fufu",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Pounded Yam",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Semo",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Lafun",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Plantain Fufu",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Cassava Fufu",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Millet Swallow (Tuwon Masara)",
+      "type": "base",
+      "group": "swallow"
+    },
+    {
+      "name": "Bread",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Agege Bread",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Yam",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Boiled Plantain",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Sweet Potato",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Irish Potato",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Beans",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Custard",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Golden Morn",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Akamu/Ogi/Pap",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Cornflakes",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Quaker Oats",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Spaghetti",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Noodles",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Wheat Meal",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Cocoyam",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Garri",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Agidi",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Masa",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Ekuru",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Ikokore",
+      "type": "base",
+      "group": "other"
+    },
+    {
+      "name": "Egusi Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Efo Riro",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Ogbono Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Okra Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Banga Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Ewedu Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Gbegiri",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Edikang Ikong",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Afang Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Bitter Leaf Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Oha Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Pepper Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Fisherman Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Ofe Owerri",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "White Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Ayamase (Designer Stew)",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Ofe Nsala",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Miyan Kuka",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Efo Elegusi",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Vegetable Soup",
+      "type": "extra",
+      "group": "soup"
+    },
+    {
+      "name": "Suya",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Asun",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Kilishi",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Fried Fish",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Grilled Fish",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Nkwobi",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Isiewu",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Moin Moin",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Akara",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Gizzard",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Ponmo",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Shaki",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Stock Fish",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Bokoto",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Fried Chicken",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Grilled Chicken",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Boiled Egg",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Fried Egg",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Scrambled Egg",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Omelette",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Snail",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Goat Meat",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Beef",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Liver",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Kidney",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Chicken",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Fish",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Assorted Meat",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Turkey",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Wara (Local Cheese)",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Dambu Nama (Shredded Dried Meat)",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Bush Meat",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Kpomo Alata (Peppered Ponmo)",
+      "type": "extra",
+      "group": "protein"
+    },
+    {
+      "name": "Ofada Stew",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Tomato Stew",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Dodo (Fried Plantain)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Fried Yam",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Zobo",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Kunu",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Coleslaw",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Jollof Sauce",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Milo",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Tea",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Bournvita",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Fura de Nunu",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Salad",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Yam Chips",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Plantain Chips",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Fish Stew",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Chicken Stew",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Obe Ata",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Ewa Agoyin",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Tigernut Milk",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Moin Moin",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Akara",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Masa (Rice Cake)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Pof Pof (Puff Puff)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Chin Chin",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Meat Pie",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Fish Roll",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Boli (Roasted Plantain)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Abacha (African Salad)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Ugba (Oil Bean Salad)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Adalu (Beans and Corn Porridge)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Kuli Kuli",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Kilishi (Northern Nigerian Dry Meat)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Okpa (Bambara Nut Pudding)",
+      "type": "extra",
+      "group": "sides"
+    },
+    {
+      "name": "Danwake (Bean Dumplings)",
+      "type": "extra",
+      "group": "sides"
+    }
+  ]
+}
