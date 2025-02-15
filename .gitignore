@@ -3,3 +3,7 @@ db.sqlite3
 temp_main.js
 .venv
 .env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
