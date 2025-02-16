@@ -20,4 +20,7 @@ python manage.py collectstatic --no-input
 echo "Attempting to create admin user"
 python manage.py create_admin
 
+echo "Loading food"
+python manage.py load_data --json food.json
+
 echo "Build process completed successfully!"
