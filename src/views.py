@@ -221,9 +221,9 @@ def ajax_save_meal_plan(request):
         # data = request.POST.get('plan', [])
         data = json.loads(request.body)
         meal_plan = MealPlan.objects.create(data=data)
-        
+
         # Generate shareable URL
-        share_url = settings.BASE_URL + f"{reverse('src:homepage')}?id={meal_plan.unique_id}"
+        share_url = f"{settings.BASE_URL}{reverse('src:homepage')}?id={meal_plan.unique_id}"
         print('url: ', share_url)
         return JsonResponse({
             'success': True, 
